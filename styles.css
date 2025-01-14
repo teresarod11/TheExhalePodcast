@@ -1,0 +1,279 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif; /* Default font for body text */
+    margin: 0;
+    padding: 0;
+    background: #f8f4eb; /* Very light beige for the background */
+    color: #4e4e4e; /* Dark gray text */
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for headings */
+    color: #4f4a45; /* Soft dark brown for contrast */
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #6a6755;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #d6ccc4;
+    width: 100%;
+    height: 100vh; /* Initial full-page height */
+    overflow: hidden;
+    transition: height 0.3s ease; /* Smooth shrinking and enlarging effect */
+    }
+  
+  #header-video {
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: contain;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #a8b9a4; /* Soft sage to moss green gradient */
+    color: #4f4a45; /* Soft dark brown for contrast */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: rgb(30, 30, 30);
+  }
+  
+  .hero p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #4a4a4a;
+  }
+  
+  .hero .cta {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 35px;
+    background: #d6ccc4; /* Deep moss green */
+    color: #4a4a4a;
+    font-weight: 600;
+    border-radius: 35px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .hero .cta:hover {
+    background: #4a5a48; /* Darker shade of moss green */
+    transform: translateY(-3px);
+  }
+  
+  /* Bio Section */
+  #bio .bio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 30px;
+  }
+  
+  .bio-photo {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .bio-photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .bio-text {
+    width: 55%;
+    padding-left: 40px;
+  }
+  
+  .bio-text h2 {
+    font-size: 2.5em;
+    color: rgb(30, 30, 30);
+    margin-bottom: 20px;
+  }
+  
+  .bio-text p {
+    font-size: 1.1em;
+    color: #5a4e44; /* Deep taupe */
+    line-height: 1.7;
+  }
+  
+ .section{
+    text-align: center;
+ }
+
+  /* Episodes Section */
+  #episodes {
+    background: #fff;
+    padding: 50px 200px;
+    border-radius: 30px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  #episodes:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    color: rgb(30, 30, 30);
+  }
+  
+  .episode-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  
+  .episode-card {
+    background: #a8b9a4;
+    padding: 25px;
+    width: 280px;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .episode-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .episode-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .episode-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .episode-card h3 {
+    font-size: 1.5em;
+    color: #372f28;
+    margin: 15px 0;
+  }
+  
+  .episode-card p {
+    font-size: 1em;
+    color: #6b6b6b;
+  }
+  
+  .episode-card .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #d6ccc4; /* Deep beige with a slight olive tone */
+    color: #4a4a4a;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .episode-card .cta:hover {
+    background: #5e4f42; /* Darker shade of beige/olive */
+    transform: translateY(-3px);
+  }
+  
+  /* Platform Links Section */
+  #listen{
+    padding-top: 20px;
+  }
+
+  .platform-links a {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 30px;
+    background: #7a6c59; /* Deep beige with a slight olive tone */
+    color: #fff;
+    border-radius: 35px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .platform-links a:hover {
+    background: #5e4f42; /* Darker shade of beige/olive */
+    transform: translateY(-3px);
+  }
+  
+  /* Quotes Section */
+  #quotes {
+    background: #fff;
+    padding: 50px 20px;
+    border-radius: 30px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    text-align: center;
+  }
+  
+  .quotes-slider {
+    font-size: 1.3em;
+    color: #5e4d3b; /* Warm earthy brown */
+    font-style: italic;
+  }
+  
+  .quote {
+    margin-bottom: 25px;
+    padding-top: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #a8b9a4; /* Warm earthy brown */
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  .social-links{
+    padding-top: 20px;
+  }
+
+  .social-links a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.0em;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #d6ccc4; /* Soft beige */
+}
+  
